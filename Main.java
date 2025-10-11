@@ -1,23 +1,23 @@
 import static java.lang.Math.sqrt;
 
 public  class  Main {
-    
+
     void main(String[] args) {
 
         float sonuc;
         float sayi1 = 15.0f;
         float sayi2 = 8.0f;
         sonuc = toplama(sayi1,sayi2);
-        System.out.println(sonuc);
+        System.out.println("iki sayının toplamı: " +sonuc);
 
-        sonuc = cıkarma(sayi1,sayi2);
-        System.out.println(sonuc);
+        sonuc = cikarma(sayi1,sayi2);
+        System.out.println("iki sayının farkı: " +sonuc);
 
         sonuc = carpma(sayi1,sayi2);
-        System.out.println(sonuc);
+        System.out.println("iki sayının çarpımı: " +sonuc);
 
         sonuc = bolme(sayi1,sayi2);
-        System.out.println(sonuc);
+        System.out.println("iki sayının bölümü: " +sonuc);
 
         eskenarUcgenCevreVeAlani(9.0f);
 
@@ -30,7 +30,7 @@ public  class  Main {
         return a+b;
     }
 
-    float cıkarma(float a, float b){
+    float cikarma(float a, float b){
         return a-b;
     }
 
@@ -48,7 +48,7 @@ public  class  Main {
         System.out.println("üçgenin çevresi: "+cevre);
         float yukseklik = (float) sqrt((a * a) - ((a / 2.0f) * (a / 2.0f)));
         float alan = (yukseklik * a) / 2.0f;
-        System.out.println(alan);
+        System.out.println("üçgenin alanı: " +alan);
     }
 
     //Yazılımcı abim öğretmek için yaptırdı.
